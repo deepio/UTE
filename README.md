@@ -1,5 +1,5 @@
 # UTE
-__U__nittest __T__raining __E__xamples
+**U**nittest **T**raining **E**xamples
 
 There are commonly 3 types of unit tests, and they each seek to answer different questions.
 
@@ -9,7 +9,8 @@ There are commonly 3 types of unit tests, and they each seek to answer different
 
 #### Integration testing
   - If I change this base class, will it break all the classes that inherit from it?
-  - Make it difficult for typos and other codebreaking faults to get pushed to a version control system. Making sure functions, methods, classes, etc. always accept, execute and return what is expected of them.
+  - Does this code still work? Do all functions still have the ability to communicate with each other? 
+Integration testing makes it difficult for codebreaking faults to get pushed to a version control system, but only if you write a test for each. You can automatically test on every commit, prior to accepting a branch merge, only on pull requests, or any combination of these by using a service like `travis`, `appveyor` or `circleci`.
 
 #### Acceptance testing
   - Do these features follow the vision of the project?
